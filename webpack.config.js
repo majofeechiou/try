@@ -6,7 +6,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
 	entry: {
         index: './src/index.js',
-        es2016: './src/es2016.js'
+        es2015: './src/es2015.js'
     },
 	output: {
 		path: './build/',
