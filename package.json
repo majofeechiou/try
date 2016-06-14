@@ -4,6 +4,10 @@
   "description": "just for learning",
   "main": "index.js",
   "scripts": {
+    "build:min": "webpack --config webpack.config.production.js",
+    "build": "webpack --config webpack.config.development.js",
+    "dev": "webpack --config webpack.config.development.js --watch",
+    "host": "webpack-dev-server --config webpack.config.development.js --watch --hot --content-base build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -6,8 +6,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
 	entry: {
         index: './src/index.js',
-        demo: './src/demo.js',
-        develop: './src/develop.js'
+        es2016: './src/es2016.js'
     },
 	output: {
 		path: './build/',
@@ -15,7 +14,7 @@ module.exports = {
 	},
 	module: {
 		loaders: [{
-			test: /\.jsx?$/,  
+			test: /\.js$/,  
 			loader: 'babel'
 		},
 		{
@@ -59,11 +58,11 @@ module.exports = {
         }]
 	},
 	resolve: {
-		extensions: ['', '.css', '.js', '.jsx'],
-        alias: {
-            'JsonExtend': path.join(__dirname, 'node_modules/json-extend/index.js'),
-            'DeepExtend': path.join(__dirname, 'node_modules/deep-extend/index.js'),
-        }
+		extensions: ['', '.css', '.js'] // ,
+        // alias: {
+        //     'JsonExtend': path.join(__dirname, 'node_modules/json-extend/index.js'),
+        //     'DeepExtend': path.join(__dirname, 'node_modules/deep-extend/index.js'),
+        // }
 	},
 	postcss: function () {
 	    return [ require('autoprefixer')({browsers: ['> 1%', 'IE 7']}), require('precss'), require('postcss-fontpath'), require("postcss-calc"), require('postcss-color') ];
