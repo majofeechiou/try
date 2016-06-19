@@ -4,9 +4,21 @@
 	<meta charset="UTF-8">
 	<title>台北市降雨淹水模擬圖</title>
 	<link rel="stylesheet" type="text/css" href="./css/water.css" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv4Ck3UzqRyL7icV3xkQ_CJxw623Q8QE4&libraries=drawing"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
 
+    <div id="map"></div>
     <!-- 參考 http://kurotanshi.github.io/TPEDisasterSummary/rain/rain_tp_map.html -->
 	<script src="./js/water.js"></script>
 

@@ -59,10 +59,10 @@ module.exports = {
         }]
 	},
 	resolve: {
-		extensions: ['', '.css', '.js'] // ,
+		extensions: ['', '.css', '.js']//,
         // alias: {
-        //     'JsonExtend': path.join(__dirname, 'node_modules/json-extend/index.js'),
-        //     'DeepExtend': path.join(__dirname, 'node_modules/deep-extend/index.js'),
+        //     // 'JsonExtend': path.join(__dirname, 'node_modules/json-extend/index.js'),
+        //     // 'DeepExtend': path.join(__dirname, 'node_modules/deep-extend/index.js'),
         // }
 	},
 	postcss: function () {
